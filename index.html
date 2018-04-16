@@ -6,7 +6,19 @@
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/style.css">
+
+
+	<link rel="stylesheet" type="text/css" href="css/style_large.css">
+	<link rel="stylesheet" type="text/css" media="only screen and (min-width:981px) and
+  	(max-width:1200px)" href="css/style_1200.css">
+  	<link rel="stylesheet" type="text/css" media="only screen and (min-width:768px) and
+  	(max-width:980px)" href="css/style_768.css">
+  	<link rel="stylesheet" type="text/css" media="only screen and (min-width:600px) and
+  	(max-width:767px)" href="css/style_600.css">
+  	<link rel="stylesheet" type="text/css" media="only screen and (min-width:100px) and
+  	(max-width:599px)" href="css/style_300.css">
+
+
 	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -287,7 +299,7 @@
     		<div class="row">
     			<div class="col-md-9 col-sm-9">
     				<div class="travel-title">
-    					<h2 class="fan"><a href="#"><span>Travel</span></a></h2>
+    					<h2 class="fan-travel"><a href="#"><span>Travel</span></a></h2>
     				</div>
     				
     			</div>
@@ -319,7 +331,7 @@
 
     		<div class="col-md-9 col-sm-9">
     				<div class="living-title">
-    					<h2 class="fan"><a href="#"><span>Culture</span></a></h2>
+    					<h2 class="fan-culture"><a href="#"><span>Culture</span></a></h2>
     				</div>
     				
     			</div>
@@ -401,7 +413,7 @@
 
 </table> -->
 
-		<div class="col-md-4 col-sm-4">
+		
 
 			
             <form>
@@ -409,15 +421,17 @@
                 <label>Subscribe by Email: </label>
                 <input class="form-control" type="text" name="" value="" placeholder="ben@example.com"> 
 
-              </div>
-              
-          	</form>
-			<div class="btn-form">
+                	<div class="btn-form">
       		<button class="btn btn-default">Submit</button>
 
 
       	</div>
-      	</div>     
+
+              </div>
+              
+          	</form>
+		
+      	   
 
       	<div class="social-btn">
       		  <a class="btn btn-social-icon btn-facebook">
@@ -431,11 +445,12 @@
     <a class="btn btn-social-icon btn-tumblr">
     <span class="fa fa-tumblr"></span>
   </a>
+
 </div> 
 
-      
+      <p class="ft">© 2018 CrossRaods-Travel | <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> by19@gmx.de</p>
 				
-				<p>© 2018 CrossRaods-Travel | <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> by19@gmx.de</p>
+				
 				
 	</div>
 
@@ -508,10 +523,12 @@ $(document).ready(function(){
 		var linkHref = $(this).attr('href');
 		/*console.log(linkHref);*/
 		
+		
+		
 
 		$('html, body').animate({
-			scrollTop: $(linkHref).offset().top
-		}, 1000);
+			scrollTop: $(linkHref).offset().top - 75
+		});
 
 		e.preventDefault();
 	});
