@@ -752,4 +752,105 @@ label{
 
 }
 
+@media(max-width: 768px){
+
+  body{
+  padding-bottom: 0px;
+  margin-bottom: -40px;
+  margin-top:80px;
+  font-size:16px;
+
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family:Poppins;
+}
+
+p{
+  font-family:Roboto;
+}
+
+.navbar-default{
+  background:#fff;
+  border:0;
+  font-family:Poppins;
+  padding: 10px;
+  margin-top: -80px;
+  margin-bottom: 6px;
+  position: sticky;
+  height: 53px;
+
+  
+}
+
+.navbar-brand{
+  font-size:24px;
+  color:#2c2c2c !important;
+  font-weight:bold;
+
+}
+
+.navbar-default li {
+  list-style: none;
+  background-color: white;
+  opacity: 0.9;
+  text-align: center;
+  margin-left: 600px;
+  
+ 
+}
+
+/* Style links in nav bar */
+.navbar-nav > li > a {
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+ 
+
+ 
+/* On hover show the menu drop down */
+.navbar-nav > li:hover > .menu-content {
+ 
+  
+  display: none;
+
+}
+
+.navbar-nav > li:hover > .menu-content2 {
+  
+  display: none;
+
+}
+
+
+
+.menu-content{
+
+  display: none;
+ 
+  /*border-top-width: thin;*/
+}
+
+.menu-content2{
+display: none;
+ 
+  /*border-top-width: thin;*/
+}
+
+
+  
+
+
+
+.country, .fancy{
+
+  color: #3590CB !important; /*blue*/
+  text-decoration: none;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  font-size: 18px !important;
+  text-transform: uppercase;
+}
+
 
