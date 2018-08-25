@@ -38,6 +38,9 @@ color: #3590CB;;
 
 .navbar-default li {
   list-style: none;
+  background-color: white;
+  opacity: 0.9;
+  text-align: center;
 }
 
 /* Style links in nav bar */

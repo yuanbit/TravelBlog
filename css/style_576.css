@@ -34,6 +34,13 @@ p{
 
 }
 
+.navbar-default li {
+  list-style: none;
+  background-color: white;
+  opacity: 0.8;
+  text-align: right;
+
+}
 
 
 /* Style links in nav bar */
