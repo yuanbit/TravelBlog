@@ -210,9 +210,8 @@
           	</div>
             <div class="about-right">
             	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam cupiditate cumque officiis, voluptates, totam nemo corrupti ab error dolores eligendi, et eos odio. Similique et, voluptatem! In laborum adipisci obcaecati...</p>
+            	<button type="button" class="btn btn-default">Read More</button>
             </div>
-            <br>
-            <a class="btn btn-default btn-lg about-btn">Read More</a>
     	</div>
     </section>
 
@@ -350,14 +349,18 @@
 			<div class="layer">
 				<form>
 			        <div class="form-group">
-			            <label>Subscribe by Email: </label>
+			            <label >Subscribe by Email: </label>
+			            
 			            <input class="form-control" type="text" name="" value="" placeholder="ben@example.com">
+			            
 			            <div class="btn-form">
 			      			<button class="btn btn-default">Submit</button>
 						</div>
 					</div>
 				</form>
+				<div class="social">
 			    <div class="social-btn">
+
 			    	<a class="btn btn-social-icon btn-facebook">
 			    	<span class="fa fa-facebook"></span>
 			  		</a>
@@ -370,15 +373,32 @@
 			    	<span class="fa fa-tumblr"></span>
 			  		</a>
 				</div> 
+			</div>
 		      	<p class="ft">© 2018 CrossRaods-Travel | <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> by19@gmx.de</p>
 		    </div>
 		</div>
 	</footer>
 
+	<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+
 	<!--Javascript-->
 	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script>
+		if (document.documentElement.clientWidth < 600) {
+		$(document).ready(function(){
+			$('.slide-section').click(function(e){
+				var linkHref = $(this).attr('href');
+		/*console.log(linkHref);*/
+				$('html, body').animate({
+					scrollTop: $(linkHref).offset().top - 300
+				});
+				e.preventDefault();
+			});
+		});
+	}
+
+	if (document.documentElement.clientWidth >= 600) {
 		$(document).ready(function(){
 			$('.slide-section').click(function(e){
 				var linkHref = $(this).attr('href');
@@ -389,6 +409,7 @@
 				e.preventDefault();
 			});
 		});
+	}
 
 		/*nav-bar-toggle disappear on click*/
 		$('.nav a').on('click', function(){
@@ -396,6 +417,30 @@
     		$('.navbar-toggle').click(); //bootstrap 3.x by Richard
     		$('.navbar-toggler').click(); //bootstrap 4.x
 		});
+
+
+		$(document).ready(function(){
+     $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('#back-to-top').fadeIn();
+            } else {
+                $('#back-to-top').fadeOut();
+            }
+        });
+        // scroll body to 0px on click
+        $('#back-to-top').click(function () {
+            $('#back-to-top').tooltip('hide');
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+        
+        $('#back-to-top').tooltip('show');
+
+});
+
+
     </script>
 </body>
 </html>

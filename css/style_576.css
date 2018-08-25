@@ -14,6 +14,7 @@ p{
   font-family:Roboto;
 }
 
+/*Navigation*/
 .navbar-default{
   background:#fff;
   border:0;
@@ -21,17 +22,13 @@ p{
   padding: 10px;
   margin-top: -80px;
   margin-bottom: 6px;
-  position: sticky;
-  
-
-  
+  position: sticky;  
 }
 
 .navbar-brand{
   font-size:24px;
   color:#2c2c2c !important;
   font-weight:bold;
-
 }
 
 .navbar-default li {
@@ -39,9 +36,7 @@ p{
   background-color: white;
   opacity: 0.8;
   text-align: right;
-
 }
-
 
 /* Style links in nav bar */
 .navbar-nav > li > a {
@@ -50,83 +45,26 @@ p{
   text-transform: uppercase;
 }
  
-
- 
 /* On hover show the menu drop down */
 .navbar-nav > li:hover > .menu-content {
   display: none;
 }
 
-.navbar-nav > li:hover > .menu-content2 {
-  
+.navbar-nav > li:hover > .menu-content2 { 
   display: none;
-
 }
 
 .menu-content{
-
   display: none;
- 
   /*border-top-width: thin;*/
 }
 
 .menu-content2{
 display: none;
- 
   /*border-top-width: thin;*/
 }
 
-.fancy span {
-  display: inline-block;
-  position: relative;  
-}
-.fancy span:before,
-.fancy span:after {
-  content: "";
-  position: absolute;
-  height: 3px;
-  border-bottom: .5px solid white;
-  border-top: .5px solid white;
-  top: 12px;
-  
-}
-.fancy span:before {
-  right: 100%;
-  margin-right: 8px;
-  width: 304px;
-}
-.fancy span:after {
-  left: 100%;
-  margin-left: 8px;
-  width: 304px;
-}
-
-
-.caption-title{
-  display: table-caption;
-  font-size: 16px;
-  width: 230px;
-  padding-top: 10px;
-  padding-left: 8px;
-  margin:0;
-  color: #3590CB;
-}
-
-
-.caption-title > a{
-
-  text-decoration: none;
-  color: #3590CB;
-  text-transform: uppercase;
-
-}
-
-.caption-title > a:hover{
-
-  color: #f4ef71;
-}
-
-  .btn{
+.btn{
     font-size: 12px;
     color: #FFF;
     padding: 6px 11px;
@@ -138,9 +76,10 @@ display: none;
     font-weight: bold;
   }
 
+/*Carousel*/
 #myCarousel{
 
-  max-height: 400px;
+  max-height: 250px;
 }
 
   .carousel-inner .item img 
@@ -149,10 +88,10 @@ display: none;
     width: 100%; 
     overflow: hidden;
     object-fit: cover;
-    height: 400px;
+    height: 250px;
   }
 
-
+/*About Me*/
 #about{
 
   margin-bottom: 40px;
@@ -161,29 +100,19 @@ display: none;
 
 #about h2{
 
-font-size: 28px;
+font-size: 22px;
 font-weight: bold;
 color: black;
 color: #2c2c2c; /*gray*/
+border-bottom: 3px solid #2c2c2c;
+border-spacing: 50px;
 text-align: center;
-  
+margin-right: 10%;
+margin-left: 10%;
+padding-bottom: 5px;
   
 }
 
-
-#about .about-left{
-  
-  
-  border-bottom: 3px solid #2c2c2c;
-  border-spacing: 50px;
-  padding-top:10px;
-  margin-right: 100px;
-  margin-left: 100px;
-
-
-
-
-}
 
 #about .about-right{
 
@@ -201,25 +130,75 @@ text-align: center;
 }
 
 
+/*Living Abroad*/
+#living h2 > a{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 24px;
+  color: #2c2c2c;
+}
+
+#living h2 > a:hover{
+
+  color: #565656;
+}
+
+.fan {
+
+  text-align: center;
+}
+
+.fan span {
+  display: inline-block;
+  position: relative;  
+
+}
+.fan span:before,
+.fan span:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  border-bottom: .5px solid black;
+  border-top: .5px solid black;
+  top: 12px;
+  }
+
+.fan span:before {
+  right: 100%;
+  margin-right: 2px;
+  width: 60px
+}
+.fan span:after {
+  
+  left: 100%;
+  margin-left: 2px;
+  width: 60px
+}
+
 #living img{
 
-  
-  height:300px;
-  width: 500px;
-  padding-left: 10px;
+  height:100%;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 20px;
   object-fit: cover;
 
 }
 
-.living-block{
-  margin: 0;
-  display: inline-block;
-  text-align: center;
+.living-title{
+
+  text-transform: uppercase;
+  font-size: 24px;
+  padding-bottom: 5px;
+  position: relative;
 }
 
-.hehe{
-  color: #565656;
+.living-block{
+  
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 40px
 }
 
 .living-btn{
@@ -245,8 +224,6 @@ text-align: center;
   font-size: 18px;
   margin:0;
   font-weight: bold;
-  
-
 
 }
 
@@ -255,59 +232,26 @@ text-align: center;
   color: #45494d;
 }
 
+/*Travel*/
 
 #travel{
-  padding-top:30px;
-  padding-bottom: 30px;
-
   
-
+  padding-bottom: 10%;
 }
 
 #travel img{
 
-  
-  max-height:300px;
-  max-width: 500px;
-  margin-left: 115px;
-  
-
+  height:100%;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  object-fit: cover;
 }
 
 .travel-right{
 
   text-align: center;
 
-}
-
-
-/*#culture{
-  background:url(../img/image3.png);
-  padding:40px;
-  color:#fff;
-  border-top:#333 7px solid;
-  border-bottom:#333 7px solid;
-}*/
-
-#living h2 > a{
-
-  padding-left: 190px;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 24px;
-  color: #2c2c2c;
-  padding-bottom: 30px;
-
- 
-}
-
-#living h2{
-  padding-bottom: 5px;
-}
-
-#living h2 > a:hover{
-
-  color: #565656;
 }
 
 #travel h2 > a:hover{
@@ -320,62 +264,30 @@ text-align: center;
   color: #565656;
 }
 
-.fan span {
-  display: inline-block;
-  position: relative;  
-
-}
-.fan span:before,
-.fan span:after {
-  content: "";
-  position: absolute;
-  height: 3px;
-  border-bottom: .5px solid black;
-  border-top: .5px solid black;
-  top: 12px;
-  }
-  .fan span:before {
-  right: 100%;
-  margin-right: 8px;
-  width: 260px;
-}
-.fan span:after {
-  left: 100%;
-  margin-left: 8px;
-  width: 300px;
-}
-
 
 #travel h2 > a{
-
-  padding-left: 210px;
   text-transform: uppercase;
   font-size: 24px;
   color: #2c2c2c; 
   padding-bottom: 40px;
-
-}
-
-#travel h2{
-  padding-bottom: 30px;
-
 }
 
 .travel-title{
 
   text-transform: uppercase;
   margin:0px;
-  padding-left:100px;
   font-size: 24px;
-  padding-top: -100px;
-  padding-bottom: 5px;
   position: relative;
+  text-align: center;
+  padding-bottom: 20px;
 }
 
 
 .fan-travel span {
   display: inline-block;
-  position: relative;  
+  position: relative; 
+  text-align: center;
+
 }
 .fan-travel span:before,
 .fan-travel span:after {
@@ -389,26 +301,14 @@ text-align: center;
 }
 .fan-travel span:before {
   right: 100%;
-  margin-right: 8px;
-  width: 260px;
+  margin-right: 2px;
+  width: 110px;
 }
 .fan-travel span:after {
   left: 100%;
-  margin-left: 8px;
-  width: 300px;
+  margin-left: 2px;
+  width: 110px;
 }
-
-.living-title{
-
-  text-transform: uppercase;
-  margin-right:500px;
-  padding-left:100px;
-  font-size: 24px;
-  padding-top: -100px;
-  padding-bottom: 5px;
-  position: relative;
-}
-
 
 
 .travel-left{
@@ -419,23 +319,18 @@ text-align: center;
 .travel-right{
 
   margin-top: 10px;
-  margin-left: 30px;
+  
 }
 
-#culture{
-
-  padding-bottom: 80px;
-}
+/*Culture*/
 
 #culture h2 > a{
-
-  padding-left: 220px;
+  
   text-transform: uppercase;
   font-size: 24px;
   color: #2c2c2c;
   padding-bottom: 40px;
 
- 
 }
 .fan-culture span {
   display: inline-block;
@@ -453,43 +348,44 @@ text-align: center;
 }
 .fan-culture span:before {
   right: 100%;
-  margin-right: 8px;
-  width: 280px;
+  margin-right: 2px;
+  width: 100px;
 }
 .fan-culture span:after {
   left: 100%;
-  margin-left: 8px;
-  width: 260px;
+  margin-left: 2px;
+  width: 100px;
 }
 
 #culture h2{
-  padding-bottom: 20px;
+  text-align: center;
 }
 
 #culture img{
 
-  
-  height:300px;
-  width: 500px;
-  padding-left: 10px;
-  padding-top: 20px;
+  height:100%;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
   object-fit: cover;
 
 }
 
+
+/*Footer*/
 .background{
 
   background: url(../img/sl/12.jpg);
   position: relative;
   background-size: cover;
   background-position: center center;
-  height: 250px;
+  height: 200px;
 }
 
 .layer{
 
   background-color: black;
-  height: 250px;
+  height: 200px;
   width: 100%;
   opacity: .7;
   position: absolute;
@@ -497,14 +393,14 @@ text-align: center;
 
 footer p{
 
-  padding-left: 200px;
-  padding-top: 30px;
+  padding-left: 5%;
+  padding-right: 5%;
   position: absolute;
 }
 
 footer{
   
-  height: 250px;
+  height: 200px;
   margin-bottom: -40px !important;
   color: white;
 
@@ -513,38 +409,33 @@ footer{
 .social-btn{
 
   margin-top: 30px;
-  margin-left: 300px;
+
+  
 }
 
 .ft{
-  padding-top: 15px;
+
+padding-top: 10px;
+
 }
 
 .form-group{
-
-  /*margin-top: 100px;
-  margin-left: 130px;*/
-
-  visibility: hidden;
-  margin-left: 300px;
-  padding-right: 260px;
-  margin-top: 40px;
-
+  display: none;
 }
 
-.btn-form{
+.social{
 
-  
-  visibility: hidden;
-  margin-top: -40px;
-  margin-left: 400px;
+  margin-left: 35%;
+  margin-right: 35%;
+  padding-top: 70px;
 }
 
-
-label{
-
-  font-size: 14px;
-
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    display:none;
+    background-color: white;
+    color: black;
 }
-
-
