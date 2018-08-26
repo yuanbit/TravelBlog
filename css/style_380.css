@@ -54,6 +54,10 @@ p{
   display: none;
 }
 
+.navbar-nav > li:hover > .menu-content3 {
+  display: none;
+}
+
 .menu-content{
   display: none;
   /*border-top-width: thin;*/
