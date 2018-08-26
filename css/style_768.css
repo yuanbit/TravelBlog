@@ -3,7 +3,6 @@ body{
   margin-bottom: -40px;
   margin-top:80px;
   font-size:16px;
-
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -12,6 +11,12 @@ h1,h2,h3,h4,h5,h6{
 
 p{
   font-family:Roboto;
+}
+
+/*Nagivation*/
+
+.nav-title{
+color: #3590CB;;
 }
 
 .navbar-default{
@@ -23,7 +28,6 @@ p{
   margin-bottom: 6px;
   position: sticky;
   height: 53px;
-  
 }
 
 .navbar-brand{
@@ -34,36 +38,39 @@ p{
 
 .navbar-default li {
   list-style: none;
-  
- 
+  background-color: white;
+  opacity: 0.9;
+  text-align: center;
 }
 
+.nav-div li{
+  background-color: #0d0e0f !important;
+}
 /* Style links in nav bar */
 .navbar-nav > li > a {
   font-size: 18px;
   text-decoration: none;
   text-transform: uppercase;
 }
- 
 
- 
 /* On hover show the menu drop down */
 .navbar-nav > li:hover > .menu-content {
   display: block;
+}
 
+.navbar-nav > li:hover > .menu-content3 {
+  display: block;
 }
 
 .navbar-nav > li:hover > .menu-content2 {
   display: block;
-
 }
 
 .navbar-nav > li:hover > .menu-content > .arrow{
   display: block;
-
 }
 
-.navbar-nav > li:hover > .menu-content > .arrow2{
+.navbar-nav > li:hover > .menu-content3 > .arrow2{
   display: block;
 
 }
@@ -74,35 +81,45 @@ p{
 }
 
 .menu-content{
-  width: 770px;
-  height: 430px;
+  width: 680px;
+  height: 400px;
   background-color: #0d0e0f;
   position: relative;
   right: -185px;
-  top: 40px;
+  top: 47px;
   display: none;
   border-top-style: solid;
   border-top-color: white;
   opacity: .9;
   position: absolute;
- 
-  /*border-top-width: thin;*/
 }
 
 .menu-content2{
-  width: 770px;
-  height: 430px;
+  width: 700px;
+  height: 400px;
   background-color: #0d0e0f;
   position: relative;
-  right: -50px;
-  top: 40px;
+  right: 10px;
+  top: 47px;
   display: none;
   border-top-style: solid;
   border-top-color: white;
   opacity: .9;
   position: absolute;
- 
-  /*border-top-width: thin;*/
+}
+
+.menu-content3{
+  width: 680px;
+  height: 400px;
+  background-color: #0d0e0f;
+  position: relative;
+  right: -90px;
+  top: 47px;
+  display: none;
+  border-top-style: solid;
+  border-top-color: white;
+  opacity: .9;
+  position: absolute;
 }
 
 .arrow, .arrow2, .arrow3{
@@ -114,27 +131,21 @@ p{
   border-bottom: 10px solid black;
   top: -10px;
   display: none;
-  
 }
 
 .arrow{
   right: 250px;
- 
 }
 
 .arrow2{
-
-  right: 225px;
-  
+  right: 130px; 
 }
 
 .arrow3{
-
-  right: 100px;
-  
+  right: 50px; 
 }
 
-
+/*Nav-Travel*/
 .country, .fancy{
 
   color: #3590CB !important; /*blue*/
@@ -144,96 +155,67 @@ p{
   font-size: 18px !important;
   text-transform: uppercase;
 }
-
 .nav-div > ul > li > .state{
 
   color: #f4ef71 !important;
   text-decoration: none;
   text-transform: uppercase; 
 }
-
 .nav-div{
   display: inline-block;
-  padding-right: 40px;
-
+  padding-top: 10px;
 }
+
 
 .nav-div > .c-list > li:first-child{
 
   position: absolute;
-  padding-left: 310px;
+  padding-left: 265px;
   bottom: 140px;
-
-
 }
-
 .nav-div > .c-list{
-  
   position: relative;
   top: -20px;
 
 }
-
 .nav-div > ul > li > a{
 
   color: white;
   text-decoration: none;
   display: block;
-  font-size: 16px;
-  
+  font-size: 16px; 
 }
 
 .nav-div > ul > li > a:hover{
-
   color: #f4ef71 !important; /*yellow*/
-
-  
 }
-
-.nav-div2{
-
-  display: inline-block;
-  vertical-align: top;
-
-
-}
-
-
-.nav-art{
-
-  padding-top: 20px;
-  padding-bottom: 10px;
-}
-
-
 
 .nav-list{
-
   padding-top: 45px;
   padding-bottom: 10px;
 }
 
+.nav-travel{
+  margin-right: 10px;
+  
+  margin-top: 15px;
+}
 
-.nav-art-img, .img1{
-  height: 190px;
-  width: 275px;
+.nav-travel-img{
+  height: 150px; 
+  width: 210px;
+  padding-left: 10px;
   display: inline-block;
-  padding-top: 0px;
-  padding-bottom: 0;
-  padding-left: 6px;
-  padding-right: 0px
 }
 
-.nav-art-img2{
-  height: 190px;
-  width: 265px;
-  padding-left: 6px;
-}
 
 
 .fancy span {
   display: inline-block;
-  position: relative;  
+  position: relative; 
+  
+
+
 }
 .fancy span:before,
 .fancy span:after {
@@ -247,63 +229,35 @@ p{
 }
 .fancy span:before {
   right: 100%;
-  margin-right: 8px;
-  width: 304px;
+  margin-right: 2px;
+  width: 300px;
 }
 .fancy span:after {
   left: 100%;
-  margin-left: 8px;
-  width: 304px;
+  margin-left: 2px;
+  width: 280px;
 }
 
-.nav-brazil-img{
-  height: 170px; 
-  width: 240px;
-  padding-left: 20px;
-  
-}
-
-.nav-brazil-img2, .nav-brazil-img3{
-  padding-left: 3px;
-  height: 170px; 
-  width: 231px;
-}
-
-.brazil-img{
-
+/*nav-div-right*/
+.nav-div-right{
   display: inline-block;
-}
-
-.nav-brazil{
-  
-  position: absolute;
-  top: 220px;
-  left: 20px;
-  
-
-}
-
-.img1{
-  display: table;
-  height: 190px;
-  width: 255px;
-}
-
-.img2{
-  display: table;
-  height: 190px;
-  width: 275px;
-  
-  
-
-}
-
-.nav-div-img{
-
-  position: relative;
-  left:270px;
-  bottom: 394px;
   vertical-align: top;
+  padding-top: 10px;
+}
+
+.div-right-sub{
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.nav-img{
+  display: table;
+  height: 150px;
+  width: 240px;
+  padding-left: 30px;
 }
 
 .caption{
@@ -324,16 +278,14 @@ p{
   padding-top: 10px;
   padding-left: 8px;
   margin:0;
-  color: #3590CB;
+  color: white;
 }
-
 
 .caption-title > a{
 
   text-decoration: none;
   color: #3590CB;
   text-transform: uppercase;
-
 }
 
 .caption-title > a:hover{
@@ -341,38 +293,51 @@ p{
   color: #f4ef71;
 }
 
-  .btn{
+.btn-default, .btn-default:hover, .btn-default:active, .btn-default:visited, .btn-default:focus {
     font-size: 12px;
-    color: #FFF;
+    color: #2c2c2c;
     padding: 6px 11px;
     margin-top: 7px;
-    background: #3590CB;
-    opacity: .7;
+    background: #fff;
+    
    /* border: 1px solid #FFF;*/
     text-transform: uppercase;
-    font-weight: bold;
-  }
+}
 
- 
-
-    .carousel-caption{
-    top: 50%;
-    transform: translateY(-50%);
+.btn {
+    font-size: 12px;
+    color: #2c2c2c;
+    padding: 6px 11px;
+    margin-top: 7px;
+    background: #fff;
+    
+   /* border: 1px solid #FFF;*/
     text-transform: uppercase;
   }
+
+  .btn:focus {
+  outline: none;
+}
+
+
+/*Carousel*/
+#myCarousel{
+
+  max-height: 350px;
+}
 
   .carousel-inner .item img 
   { 
 
     width: 100%; 
-    max-height: 480px;
     overflow: hidden;
     object-fit: cover;
-
-  
+    height: 350px;
   }
 
 
+
+/* About */
 #about{
 
   margin-bottom: 40px;
@@ -385,20 +350,15 @@ font-size: 28px;
 font-weight: bold;
 color: black;
 color: #2c2c2c; /*gray*/
-  
-  
+border-bottom: 3px solid #2c2c2c;
 }
-
 
 #about .about-left{
   
-  
-  border-bottom: 3px solid #2c2c2c;
-  border-spacing: 50px;
+  border-spacing: 90px;
   padding-top:10px;
-  margin-right: 70px;
-
-
+  padding-right: 30px;
+  padding-left: 30px;
 
 }
 
@@ -414,109 +374,17 @@ color: #2c2c2c; /*gray*/
 #about .about-btn{
 
   margin-top: -40px;
-  margin-left: 130px;
+  margin-left: 220px;
 }
 
-
-#living img{
-
-  
-  height:200px;
-  width: 250px;
-  padding-left: 10px;
-  object-fit: cover;
-
-}
-
-.living-block{
-  margin: 0;
-  display: inline-block;
-  text-align: center;
-}
-
-.hehe{
-  color: #565656;
-}
-
-.living-btn{
-  margin-left: 50px;
-}
-
-.living-caption{
-  color: black;
-
-}
-
-.living-caption-title{
-
-  padding-top: 10px;
-}
-
-.living-caption-title > a{
-
-  text-decoration: none;
-  color: #3590cb;
-  text-transform: uppercase;
-  font-size: 18px;
-  margin:0;
-  font-weight: bold;
-  
-
-
-}
-
-.living-caption-title > a:hover{
-
-  color: #45494d;
-}
-
-
-#travel{
-  padding-top:30px;
-  padding-bottom: 30px;
-
-  
-
-}
-
-#travel img{
-
-  
-  max-height:340px;
-  max-width: 400px;
-  padding-right: 10px;
-
-}
-
-.travel-right{
-
-  text-align: center;
-
-}
-
-
-/*#culture{
-  background:url(../img/image3.png);
-  padding:40px;
-  color:#fff;
-  border-top:#333 7px solid;
-  border-bottom:#333 7px solid;
-}*/
+/*Living Abroad*/
 
 #living h2 > a{
 
-  padding-left: 240px;
-  text-transform: uppercase;
   text-align: center;
+  text-transform: uppercase;
   font-size: 24px;
   color: #2c2c2c;
-  padding-bottom: 40px;
-
- 
-}
-
-#living h2{
-  padding-bottom: 30px;
 }
 
 #living h2 > a:hover{
@@ -524,15 +392,6 @@ color: #2c2c2c; /*gray*/
   color: #565656;
 }
 
-#travel h2 > a:hover{
-
-  color: #565656;
-}
-
-#culture h2 > a:hover{
-
-  color: #565656;
-}
 
 .fan span {
   display: inline-block;
@@ -550,18 +409,116 @@ color: #2c2c2c; /*gray*/
 }
 .fan span:before {
   right: 100%;
-  margin-right: 8px;
-  width: 325px;
+  margin-right: 2px;
+  width: 220px;
 }
 .fan span:after {
   left: 100%;
-  margin-left: 8px;
-  width: 302px;
+  margin-left: 2px;
+  width: 220px;
 }
+
+#living img{
+
+  
+  height:200px;
+  width: 250px;
+  object-fit: cover;
+  padding-right: 55px;
+
+}
+
+.living-block{
+  
+  text-align: center;
+margin-left: 20px;
+  
+
+}
+
+.box{
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin-left: 10px;
+
+}
+
+.one{
+
+  width: 30%
+}
+
+.two{
+
+  width: 30%
+}
+
+.three{
+
+  width: 30%
+}
+
+
+.living-caption{
+  color: black;
+
+}
+
+
+
+.living-caption-title > a{
+
+  text-decoration: none;
+  color: #3590cb;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  
+}
+
+.living-caption-title > a:hover{
+
+  color: #45494d;
+}
+
+/*Travel*/
+#travel{
+  padding-top:30px;
+  padding-bottom: 30px;
+}
+
+#travel img{
+  
+  max-height:100%;
+  max-width: 100%;
+
+}
+
+
+
+.travel-right{
+
+  text-align: center;
+
+}
+
+
+#travel h2 > a:hover{
+
+  color: #565656;
+}
+
+#culture h2 > a:hover{
+
+  color: #565656;
+}
+
+
 
 #travel h2 > a{
 
-  padding-left: 236px;
+  text-align: center;
   text-transform: uppercase;
   font-size: 24px;
   color: #2c2c2c; 
@@ -571,14 +528,13 @@ color: #2c2c2c; /*gray*/
 
 #travel h2{
   padding-bottom: 30px;
-
 }
 
 .travel-title{
 
   text-transform: uppercase;
   margin:0px;
-  padding-left:100px;
+  
   font-size: 24px;
   padding-top: -100px;
   padding-bottom: 5px;
@@ -602,26 +558,14 @@ color: #2c2c2c; /*gray*/
 }
 .fan-travel span:before {
   right: 100%;
-  margin-right: 8px;
-  width: 320px;
+  margin-right: 2px;
+  width: 300px;
 }
 .fan-travel span:after {
   left: 100%;
-  margin-left: 8px;
-  width: 305px;
+  margin-left: 2px;
+  width: 300px;
 }
-
-.living-title{
-
-  text-transform: uppercase;
-  margin-right:500px;
-  padding-left:100px;
-  font-size: 24px;
-  padding-top: -100px;
-  padding-bottom: 5px;
-  position: relative;
-}
-
 
 
 .travel-left{
@@ -632,9 +576,10 @@ color: #2c2c2c; /*gray*/
 .travel-right{
 
   margin-top: 10px;
-  margin-left: 30px;
+
 }
 
+/*Culture*/
 #culture{
 
   padding-bottom: 80px;
@@ -642,7 +587,7 @@ color: #2c2c2c; /*gray*/
 
 #culture h2 > a{
 
-  padding-left: 230px;
+  text-align: center;
   text-transform: uppercase;
   font-size: 24px;
   color: #2c2c2c;
@@ -666,13 +611,13 @@ color: #2c2c2c; /*gray*/
 }
 .fan-culture span:before {
   right: 100%;
-  margin-right: 8px;
-  width: 315px;
+  margin-right: 2px;
+  width: 260px;
 }
 .fan-culture span:after {
   left: 100%;
-  margin-left: 8px;
-  width: 310px;
+  margin-left: px;
+  width: 250px;
 }
 
 #culture h2{
@@ -684,11 +629,12 @@ color: #2c2c2c; /*gray*/
   
   height:200px;
   width: 250px;
-  padding-left: 10px;
   object-fit: cover;
+  padding-right: 55px;
 
 }
 
+/*Footer*/
 .background{
 
   background: url(../img/sl/12.jpg);
@@ -709,7 +655,7 @@ color: #2c2c2c; /*gray*/
 
 footer p{
 
-  padding-left: 350px;
+  
   padding-top: 30px;
   position: absolute;
 }
@@ -722,41 +668,22 @@ footer{
 
 }
 
-.social-btn{
-
-  margin-top: 30px;
-  margin-left: 455px;
-}
-
 .ft{
-  padding-top: 15px;
+
+  font-size: 16px;
+  margin-left: 21%;
 }
+.social{
 
-.form-group{
-
-  /*margin-top: 100px;
-  margin-left: 130px;*/
-
-  visibility: hidden;
-  margin-left: 300px;
-  padding-right: 260px;
-  margin-top: 40px;
-
+ margin-left: 41%;
+ margin-top: 50px;
 }
-
-.btn-form{
-
-  
-  visibility: hidden;
-  margin-top: -40px;
-  margin-left: 400px;
-}
-
 
 label{
 
   font-size: 14px;
 
 }
+
 
 

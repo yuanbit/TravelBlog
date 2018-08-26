@@ -465,4 +465,382 @@ padding-top: 10px;
     display:none;
     background-color: white;
     color: black;
+    border-color: #2c2c2c;
+}
+
+@media screen and (min-width:50px) and (max-width:190px){
+
+.ft{
+display: none;
+
+}
+
+
+.social{
+
+  display: none;
+}
+
+.fan span:before,
+.fan span:after {
+
+  display: none;
+}
+
+.fan-travel span:before,
+.fan-travel span:after {
+  display: none;
+}
+
+.fan-culture span:before,
+.fan-culture span:after {
+  display: none;
+}
+
+}
+
+@media screen and (min-width:191px) and (max-width:250px){
+
+.ft{
+
+  display: none;
+}
+.social{
+
+  margin-left: 25%;
+  margin-right: 10%;
+}
+
+.fan span:before,
+.fan span:after {
+
+  display: none;
+}
+
+.fan-travel span:before,
+.fan-travel span:after {
+  display: none;
+}
+
+.fan-culture span:before,
+.fan-culture span:after {
+  display: none;
+}
+
+
+}
+
+@media screen and (min-width:251px) and (max-width:319px){
+
+.ft{
+
+  display: none;
+}
+.social{
+
+  margin-left: 30%;
+  margin-right: 20%;
+}
+
+.fan span:before,
+.fan span:after {
+
+  display: none;
+}
+
+.fan-travel span:before,
+.fan-travel span:after {
+  display: none;
+}
+
+.fan-culture span:before,
+.fan-culture span:after {
+  display: none;
+}
+
+
+}
+
+@media screen and (min-width:320px) and (max-width:380px){
+
+.ft{
+
+  font-size: 13px;
+  margin-left: 10px;
+}
+.social{
+
+  margin-left: 35%;
+  margin-right: 10%;
+}
+
+}
+
+@media screen and (min-width:381px) and (max-width:374px){
+
+.ft{
+
+  font-size: 14px;
+  margin-left: 5%;
+}
+.social{
+
+  margin-left: 40%;
+  margin-right: 10%;
+}
+
+}
+
+@media screen and (min-width:395px) and (max-width:435px){
+.ft{
+
+  font-size: 14px;
+  margin-left: 5%;
+}
+
+.fan span:before,
+.fan span:after {
+
+  margin-right: 2px;
+  width: 100px;
+}
+
+.fan-travel span:before,
+.fan-travel span:after {
+  margin-right: 2px;
+  width: 140px;
+}
+
+.fan-culture span:before,
+.fan-culture span:after {
+  margin-right: 2px;
+  width: 130px;
+}
+
+}
+
+@media screen and (min-width:436px) and (max-width:476px){
+.ft{
+
+  font-size: 14px;
+  margin-left: 10%;
+}
+
+.fan span:before,
+.fan span:after {
+
+  margin-right: 2px;
+  width: 120px;
+}
+
+.fan-travel span:before,
+.fan-travel span:after {
+  margin-right: 2px;
+  width: 160px;
+}
+
+.fan-culture span:before,
+.fan-culture span:after {
+  margin-right: 2px;
+  width: 150px;
+}
+
+}
+
+@media screen and (min-width:477px) and (max-width:520px){
+.ft{
+
+  font-size: 14px;
+  margin-left: 15%;
+}
+.social{
+
+  margin-left: 40%;
+  margin-right: 20%;
+}
+
+.fan span:before,
+.fan span:after {
+
+  margin-right: 2px;
+  width: 150px;
+}
+
+.fan-travel span:before,
+.fan-travel span:after {
+  margin-right: 2px;
+  width: 180px;
+}
+
+.fan-culture span:before,
+.fan-culture span:after {
+  margin-right: 2px;
+  width: 170px;
+}
+
+}
+
+@media screen and (min-width:521px) and (max-width:571px){
+.ft{
+
+  font-size: 14px;
+  margin-left: 20%;
+}
+.social{
+
+  margin-left: 40%;
+  margin-right: 30%;
+}
+
+.fan span:before,
+.fan span:after {
+
+  margin-right: 2px;
+  width: 170px;
+}
+
+.fan-travel span:before,
+.fan-travel span:after {
+  margin-right: 2px;
+  width: 200px;
+}
+
+.fan-culture span:before,
+.fan-culture span:after {
+  margin-right: 2px;
+  width: 190px;
+}
+
+}
+
+@media screen and (min-width:572px) and (max-width:630px){
+.ft{
+
+  font-size: 14px;
+  margin-left: 20%;
+}
+.social{
+
+  margin-left: 40%;
+  margin-right: 25%;
+}
+
+.fan span:before,
+.fan span:after {
+
+  margin-right: 2px;
+  width: 190px;
+}
+
+.fan-travel span:before,
+.fan-travel span:after {
+  margin-right: 2px;
+  width: 220px;
+}
+
+.fan-culture span:before,
+.fan-culture span:after {
+  margin-right: 2px;
+  width: 210px;
+}
+
+}
+
+@media screen and (min-width:630px) and (max-width:690px){
+.ft{
+
+  font-size: 16px;
+  margin-left: 20%;
+}
+.social{
+
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+.fan span:before,
+.fan span:after {
+
+  margin-right: 2px;
+  width: 220px;
+}
+
+.fan-travel span:before,
+.fan-travel span:after {
+  margin-right: 2px;
+  width: 280px;
+}
+
+.fan-culture span:before,
+.fan-culture span:after {
+  margin-right: 2px;
+  width: 250px;
+}
+
+}
+
+@media screen and (min-width:691px) and (max-width:730px){
+.ft{
+
+  font-size: 16px;
+  margin-left: 20%;
+}
+.social{
+
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+.fan span:before,
+.fan span:after {
+
+  margin-right: 2px;
+  width: 240px;
+}
+
+.fan-travel span:before,
+.fan-travel span:after {
+  margin-right: 2px;
+  width: 300px;
+}
+
+.fan-culture span:before,
+.fan-culture span:after {
+  margin-right: 2px;
+  width: 270px;
+}
+
+}
+
+@media screen and (min-width:731px) and (max-width:767px){
+.ft{
+
+  font-size: 16px;
+  margin-left: 25%;
+}
+.social{
+
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+.fan span:before,
+.fan span:after {
+
+  margin-right: 2px;
+  width: 260px;
+}
+
+.fan-travel span:before,
+.fan-travel span:after {
+  margin-right: 2px;
+  width: 320px;
+}
+
+.fan-culture span:before,
+.fan-culture span:after {
+  margin-right: 2px;
+  width: 290px;
+}
+
 }
