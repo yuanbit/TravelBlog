@@ -574,8 +574,8 @@ display: none;
 
 .ft{
 
-  font-size: 13px;
-  margin-left: 10px;
+  font-size: 12px;
+  
 }
 .social{
 
@@ -585,16 +585,16 @@ display: none;
 
 }
 
-@media screen and (min-width:381px) and (max-width:374px){
+@media screen and (min-width:381px) and (max-width:394px){
 
 .ft{
 
   font-size: 14px;
-  margin-left: 5%;
+  margin-left: 13px;
 }
 .social{
 
-  margin-left: 40%;
+  margin-left: 35%;
   margin-right: 10%;
 }
 
@@ -604,7 +604,7 @@ display: none;
 .ft{
 
   font-size: 14px;
-  margin-left: 10%;
+  margin-left: 5%;
 }
 
 .fan span:before,
