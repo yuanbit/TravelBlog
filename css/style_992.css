@@ -636,7 +636,7 @@ margin-left: 20px;
 /*Footer*/
 .background{
 
-  background: url(../img/sl/12.jpg);
+  background: url(../img/12.jpg);
   position: relative;
   background-size: cover;
   background-position: center center;
@@ -667,11 +667,7 @@ footer{
 
 }
 
-.form-group{
 
-  margin-top: 50px;
-  background-color: red;
-}
 
 .ft{
 
